@@ -53,6 +53,7 @@ public class PostgresDAO {
             System.out.println("rows after batch execution = "+ rs.getRow());
 
             ResultSet rs1 = st.executeQuery(displayQuery);
+
             while (rs1.next()) {
                 System.out.println(rs1.getString(1));
                 System.out.println(rs1.getString(2));
